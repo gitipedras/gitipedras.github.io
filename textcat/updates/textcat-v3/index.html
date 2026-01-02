@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Textcat v3 is coming soon</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: flex-start; gap: 20px;">
+        <img src="/static/telesto-logo.png" style="height: auto; object-fit: cover; border-radius: 5px;" width="4%">
+        
+        <div>
+            <h1 style="margin-top: 0;"><a href="/">Textcat</a></h1>
+            <!--<span style='font-size:27px;'><span style='color:#22FF8A;'>T</span><span style='color:#1EE77D;'>e</span><span style='color:#1BCF70;'>x</span><span style='color:#18B763;'>t</span><span style='color:#159F56;'>c</span><span style='color:#128749;'>a</span><span style='color:#0F6F3C;'>t</span></span>  
+        -->
+          </div>
+    </div>
+    <br>
+    <nav>
+      <a href="/updates/">Updates</a> <a href="/wiki/">Wiki</a></a>
+    </nav>
+  </header>
+  <main>
+    
+<article>
+  <h1>Textcat v3 is coming soon</h1>
+  <p>Textcat v3 is on the horizon, bringing a structural upgrade to the project. Unlike <code>v2</code>, which lacked a formal API, <code>v3</code> introduces proper API using interfaces and an <code>app</code> struct.</p>
+<p>This means developers can now rely on a stable, clear API when building their own Textcat servers/clients.</p>
+<p>The split between <code>cmd/</code> and <code>tc/</code> makes v3 far more modular. <code>tc/</code> contains the core library, implementing interfaces for authentication, data handling, and session management, while <code>cmd/</code> focuses on server handling. <code>tc/</code> also has no idea of what &quot;websockets&quot; or &quot;sql&quot; is, meaning you can do whatever you want with it.</p>
+<p>This separation allows anyone to reuse the <code>tc</code> library for custom servers, alternative frontends, or integrations, without being tied to the default websocket server. You can even import it as it's own package.</p>
+<p>Overall, Textcat v3 is my idea of a <strong>proper</strong> app: Simple, Fast and Extendable!</p>
+<p>Have a Happy New Year,
+Zion8992</p>
+
+</article>
+
+
+  </main>
+  <footer>
+    <p>© 2025 Textcat Website</p>
+
+  </footer>
+</body>
+</html>
+
